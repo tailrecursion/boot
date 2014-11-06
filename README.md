@@ -3,6 +3,9 @@
 
 # Boot
 
+> Boot is moving to [boot-clj/boot](https://github.com/boot-clj/boot) starting
+> with version 2.0.0. Version 1.x.x will remain in maintenance mode here.
+
 Boot is a shell interpreter for scripts written in Clojure. It is designed to be
 used with the “shebang” style of shell scripts to provide a simple means to have
 single file, self-contained scripts in Clojure that can include dependencies and
