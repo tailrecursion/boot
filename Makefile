@@ -1,4 +1,3 @@
-
 help:
 	@echo
 	@echo 'Usage: make {boot|help}'
@@ -21,7 +20,7 @@ build: clean
 
 boot: build
 	echo '#!/usr/bin/env bash' > boot
-	echo 'java $$JVM_OPTS -jar $$0 "$$@"' >> boot
+	echo 'java $$JVM_OPTS -jar "$$0" "$$@"' >> boot
 	echo 'exit' >> boot
 	cat target/boot*-standalone.jar >> boot
 	chmod 0755 boot
